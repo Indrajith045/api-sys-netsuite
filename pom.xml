@@ -5,8 +5,8 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>a62f6236-0b02-4e5f-a8eb-dc5e37aedb12</groupId>
-	<artifactId>api-sys-netsuite</artifactId>
-	<version>1.0.2</version>
+	<artifactId>netsuite-sys-api</artifactId>
+	<version>1.0.0</version>
 	<packaging>mule-application</packaging>
 
 	<name>api-sys-netsuite</name>
