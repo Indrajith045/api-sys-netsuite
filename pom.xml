@@ -83,14 +83,14 @@
 			<version>1.2.5</version>
 			<classifier>mule-plugin</classifier>
 		</dependency>
-		<!--<dependency>
+		<dependency>
 			<groupId>a62f6236-0b02-4e5f-a8eb-dc5e37aedb12</groupId>
 			<artifactId>api-sys-netsuite</artifactId>
 			<version>1.0.0</version>
 			<classifier>raml</classifier>
 			<type>zip</type>
 			<scope>provided</scope>
-		</dependency-->
+		</dependency>
 		<dependency>
 			<groupId>org.mule.modules</groupId>
 			<artifactId>mule-apikit-module</artifactId>
