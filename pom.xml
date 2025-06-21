@@ -4,10 +4,10 @@
 
 	<groupId>a62f6236-0b02-4e5f-a8eb-dc5e37aedb12</groupId>
 	<artifactId>netsuite-sys-api</artifactId>
-	<version>1.0.17</version>
+	<version>1.0.18</version>
 	<packaging>mule-application</packaging>
 
-	<name>${appname}</name>
+	<name>netsuite-sys-api</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -43,15 +43,15 @@
 						<businessGroupId>${anypoint.businessGroup}</businessGroupId>
 						<environment>${env}</environment>
 						<target>DemoSpace</target>
-						<applicationName>${project.name}</applicationName>
+						<applicationName>${appname}</applicationName>
 						<replicas>1</replicas>
 						<vCores>0.1</vCores>
 						<deploymentSettings>
 							<http>
-								<inbound>
-									<publicUrl>https://${project.name}.sirichat.com</publicUrl>
-								</inbound>
-							</http>
+            							<inbound>
+                							<publicUrl>https://${appname}.sirichat.com</publicUrl>
+            							</inbound>
+        						</http>
 							<lastMileSecurity>false</lastMileSecurity>
 							<forwardSslSession>false</forwardSslSession>
 							<generateDefaultPublicUrl>false</generateDefaultPublicUrl>
