@@ -4,7 +4,7 @@
 
 	<groupId>a62f6236-0b02-4e5f-a8eb-dc5e37aedb12</groupId>
 	<artifactId>netsuite-sys-api</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.13</version>
 	<packaging>mule-application</packaging>
 
 	<name>netsuite-sys-api</name>
@@ -49,17 +49,19 @@
 						<deploymentSettings>
 							<http>
 								<inbound>
-									<publicUrl>https://deploy-cloudhub2.sirichat.com</publicUrl>
+									<publicUrl>https://${project.name}.sirichat.com</publicUrl>
 								</inbound>
 							</http>
 							<lastMileSecurity>false</lastMileSecurity>
 							<forwardSslSession>false</forwardSslSession>
 							<generateDefaultPublicUrl>false</generateDefaultPublicUrl>
 						</deploymentSettings>
-						<properties>
+						<secureProperties>
+							<key>${key}</key>
 							<anypoint.platform.client_id>${anypoint.platform.client_id}</anypoint.platform.client_id>
 							<anypoint.platform.client_secret>${anypoint.platform.client_secret}</anypoint.platform.client_secret>
-							<mule.key>${key}</mule.key>
+						</secureProperties>
+						<properties>
 							<mule.env>${mule.env}</mule.env>
 						</properties>
 					</cloudhub2Deployment>
